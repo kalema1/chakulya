@@ -1,3 +1,9 @@
+import Logo from "../ui/Logo";
+
 export default function HomePage() {
-  return <div>home page</div>;
+  return (
+    <div>
+      <Logo />
+    </div>
+  );
 }
