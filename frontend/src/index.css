@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
-  font-family: "Lexend Deca", sans-serif;
+  --font-family: "Outfit", sans-serif;
   --color-font-1: #ea580c;
+  --color-font-2: #49557e;
 }
 
 * {
@@ -10,4 +11,20 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--font-family);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
 }

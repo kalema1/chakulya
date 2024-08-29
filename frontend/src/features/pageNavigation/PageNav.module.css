@@ -1,0 +1,17 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 2rem;
+  color: var(--color-font-2);
+}
+.navListItem {
+  color: var(--color-font-2);
+}
