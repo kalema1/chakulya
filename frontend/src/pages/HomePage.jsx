@@ -1,9 +1,9 @@
-import Logo from "../ui/Logo";
+import PageNav from "../features/pageNavigation/PageNav";
 
 export default function HomePage() {
   return (
     <div>
-      <Logo />
+      <PageNav />
     </div>
   );
 }
