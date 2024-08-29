@@ -19,3 +19,12 @@
 .navListItem {
   color: var(--color-font-2);
 }
+
+.mobileMenuContainer {
+  display: none;
+}
+
+.mobileMenu {
+  font-size: 3rem;
+  color: var(--color-font-2);
+}

@@ -24,7 +24,8 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 120rem;
+  padding: 0 2.4rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 li {

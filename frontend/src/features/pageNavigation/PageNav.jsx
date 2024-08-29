@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 import Logo from "../../ui/Logo";
 import NavBarRight from "./NavBarRight";
 import styles from "./PageNav.module.css";
@@ -26,6 +27,9 @@ export default function PageNav() {
           </div>
           <div>
             <NavBarRight />
+          </div>
+          <div className={styles.mobileMenuContainer}>
+            <FaBars className={styles.mobileMenu} />
           </div>
         </div>
       </div>
