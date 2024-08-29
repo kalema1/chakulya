@@ -5,7 +5,7 @@ import styles from "./PageNav.module.css";
 
 export default function PageNav() {
   return (
-    <header>
+    <header className={styles.header}>
       <div className="container">
         <div className={styles.navContainer}>
           <div>
