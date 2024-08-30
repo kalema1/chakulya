@@ -1,0 +1,14 @@
+.signIn {
+  color: var(--color-font-2);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 0 1.5px var(--color-border) inset;
+  border-radius: 500px;
+  transition: 0.3s;
+}
+
+.signIn:hover {
+  background-color: var(--color-background);
+  box-shadow: none;
+}

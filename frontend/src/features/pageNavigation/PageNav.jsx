@@ -5,6 +5,7 @@ import Logo from "../../ui/Logo";
 import NavBarRight from "./NavBarRight";
 import styles from "./PageNav.module.css";
 import { usePageNav } from "./usePageNav";
+import SignIn from "./SignIn";
 
 export default function PageNav() {
   const { openMobileNav, showMobileNav } = usePageNav();
@@ -30,6 +31,9 @@ export default function PageNav() {
               </li>
               <li>
                 <NavLink className={styles.navListItem}>Contact us</NavLink>
+              </li>
+              <li className={styles.signInItem}>
+                <SignIn />
               </li>
             </ul>
           </nav>

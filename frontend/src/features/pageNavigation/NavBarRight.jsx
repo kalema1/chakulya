@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styles from "./NavBarRight.module.css";
+import SignIn from "./SignIn";
 
 export default function NavBarRight() {
   return (
@@ -10,8 +10,8 @@ export default function NavBarRight() {
       <div>
         <img src="frontend_assets/basket_icon.png" alt="" />
       </div>
-      <div>
-        <Link className={styles.signIn}>Sign in</Link>
+      <div className={styles.signInContainer}>
+        <SignIn />
       </div>
     </div>
   );
