@@ -3,14 +3,9 @@ import { FaBars } from "react-icons/fa";
 import Logo from "../../ui/Logo";
 import NavBarRight from "./NavBarRight";
 import styles from "./PageNav.module.css";
-import { useState } from "react";
+import { openMobileNav, showMobileNav } from "./usePageNav";
 
 export default function PageNav() {
-  const [showMobileNav, setShowMobileNav] = useState(false);
-
-  function openMobileNav() {
-    setShowMobileNav((isOpen) => !isOpen);
-  }
   return (
     <header className={styles.header}>
       <div className="container">
