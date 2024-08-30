@@ -14,20 +14,31 @@
   box-sizing: border-box;
   font-weight: 400;
 }
+
+html,
+body {
+  overflow-x: clip;
+  display: flow-root;
+}
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: var(--font-family);
 }
+
 a {
   text-decoration: none;
 }
+
 .container {
   padding: 0 2.4rem;
   max-width: 130rem;
   margin: 0 auto;
 }
+
 li {
   list-style: none;
 }

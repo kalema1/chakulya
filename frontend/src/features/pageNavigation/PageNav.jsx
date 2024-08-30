@@ -3,16 +3,26 @@ import { FaBars } from "react-icons/fa";
 import Logo from "../../ui/Logo";
 import NavBarRight from "./NavBarRight";
 import styles from "./PageNav.module.css";
+import { useState } from "react";
 
 export default function PageNav() {
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
+  function openMobileNav() {
+    setShowMobileNav((isOpen) => !isOpen);
+  }
   return (
     <header className={styles.header}>
       <div className="container">
-        <div className={styles.navContainer}>
+        <div
+          className={`${styles.navContainer} ${
+            showMobileNav ? styles["navOpen"] : ""
+          }`}
+        >
           <div>
             <Logo />
           </div>
-          <div>
+          <nav className={styles.navListContainer}>
             <ul className={styles.navList}>
               <li>
                 <NavLink className={styles.navListItem}>Home</NavLink>
@@ -24,11 +34,11 @@ export default function PageNav() {
                 <NavLink className={styles.navListItem}>Contact us</NavLink>
               </li>
             </ul>
-          </div>
+          </nav>
           <div>
             <NavBarRight />
           </div>
-          <div className={styles.mobileMenuContainer}>
+          <div className={styles.mobileMenuContainer} onClick={openMobileNav}>
             <FaBars className={styles.mobileMenu} />
           </div>
         </div>
