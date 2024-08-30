@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { IoIosMenu } from "react-icons/io";
+import { IoIosClose } from "react-icons/io";
 import Logo from "../../ui/Logo";
 import NavBarRight from "./NavBarRight";
 import styles from "./PageNav.module.css";
-import { openMobileNav, showMobileNav } from "./usePageNav";
+import { usePageNav } from "./usePageNav";
 
 export default function PageNav() {
+  const { openMobileNav, showMobileNav } = usePageNav();
+
   return (
     <header className={styles.header}>
       <div className="container">
@@ -34,7 +37,11 @@ export default function PageNav() {
             <NavBarRight />
           </div>
           <div className={styles.mobileMenuContainer} onClick={openMobileNav}>
-            <FaBars className={styles.mobileMenu} />
+            {showMobileNav ? (
+              <IoIosClose className={styles.mobileMenu} />
+            ) : (
+              <IoIosMenu className={styles.mobileMenu} />
+            )}
           </div>
         </div>
       </div>

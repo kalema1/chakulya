@@ -26,8 +26,9 @@
 }
 
 .mobileMenu {
-  font-size: 3rem;
+  font-size: 5.2rem;
   color: var(--color-font-2);
+  cursor: pointer;
 }
 
 /*********************************/
