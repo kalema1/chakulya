@@ -1,3 +1,10 @@
+import PageNav from "../features/pageNavigation/PageNav";
+
 export default function ContactUs() {
-  return <div>Contact Us</div>;
+  return (
+    <div>
+      <PageNav />
+      Contact Us
+    </div>
+  );
 }

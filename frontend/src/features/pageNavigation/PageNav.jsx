@@ -24,13 +24,19 @@ export default function PageNav() {
           <nav className={styles.navListContainer}>
             <ul className={styles.navList}>
               <li>
-                <NavLink className={styles.navListItem}>Home</NavLink>
+                <NavLink to="/" className={styles.navListItem}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink className={styles.navListItem}>Menu</NavLink>
+                <NavLink to="/menu" className={styles.navListItem}>
+                  Menu
+                </NavLink>
               </li>
               <li>
-                <NavLink className={styles.navListItem}>Contact us</NavLink>
+                <NavLink to="/contact-us" className={styles.navListItem}>
+                  Contact us
+                </NavLink>
               </li>
               <li className={styles.signInItem}>
                 <SignIn />
