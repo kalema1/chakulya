@@ -6,4 +6,25 @@
   background: url("frontend_assets/header_img.png") no-repeat;
   background-size: contain;
   height: 74vh;
+  position: relative;
+}
+
+.heroContentBox {
+  max-width: 50%;
+  position: absolute;
+  bottom: 10%;
+  left: 6vw;
+}
+
+.heroHeading {
+  font-size: 6.4rem;
+  color: var(--color-font-white);
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.heroPara {
+  font-size: 2rem;
+  color: var(--color-font-white);
+  margin-bottom: 3rem;
 }
