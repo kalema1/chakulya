@@ -1,0 +1,9 @@
+.heroSection {
+  margin: 9.6rem 0;
+}
+
+.heroContainer {
+  background: url("frontend_assets/header_img.png") no-repeat;
+  background-size: contain;
+  height: 74vh;
+}
