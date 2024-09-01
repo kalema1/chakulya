@@ -16,7 +16,7 @@ export default function Hero() {
               mission is to satisfy your cravings and elevate your dinning
               experience, one delicious meal at a time.
             </p>
-            <Link>View Menu</Link>
+            <Link className={styles.viewMenu}>View Menu</Link>
           </div>
         </div>
       </div>

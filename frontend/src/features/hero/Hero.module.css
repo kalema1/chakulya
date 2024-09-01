@@ -3,16 +3,18 @@
 }
 
 .heroContainer {
-  background: url("frontend_assets/header_img.png") no-repeat;
-  background-size: contain;
+  background-image: url("frontend_assets/header_img.png");
+  background-size: cover;
   height: 74vh;
   position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .heroContentBox {
   max-width: 50%;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 6vw;
 }
 
@@ -27,4 +29,19 @@
   font-size: 2rem;
   color: var(--color-font-white);
   margin-bottom: 3rem;
+}
+
+.viewMenu {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  color: var(--color-font-3);
+  font-weight: 500;
+  background-color: var(--color-font-white);
+  border-radius: 300px;
+  transition: 0.3s;
+}
+
+.viewMenu:hover {
+  background-color: var(--color-background);
+  transform: scale(1.5);
 }
