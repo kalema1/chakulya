@@ -45,3 +45,39 @@
   background-color: var(--color-background);
   transform: scale(1.5);
 }
+
+/***********************************************/
+/* Below 1073px */
+/***********************************************/
+
+@media (max-width: 67em) {
+  .heroContentBox {
+    bottom: 10%;
+  }
+
+  .heroHeading {
+    font-size: 4.4rem;
+  }
+}
+
+/***********************************************/
+/* Below 805px */
+/***********************************************/
+@media (max-width: 50em) {
+  .heroContentBox {
+    max-width: 70%;
+  }
+}
+
+/***********************************************/
+/* Below 450px */
+/***********************************************/
+@media (max-width: 28em) {
+  .heroContentBox {
+    bottom: 5%;
+  }
+
+  .heroContentBox {
+    max-width: 100%;
+  }
+}
