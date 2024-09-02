@@ -1,0 +1,27 @@
+.section {
+  margin: 9.6rem 0;
+}
+
+.subHeading {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--color-font-2);
+}
+
+.para {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: var(--color-font-2);
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
