@@ -1,3 +1,5 @@
+import { menuList } from "../../data/menuList";
+import ExploreMenuListItem from "./ExploreMenuListItem";
 export default function ExploreMenu() {
   return (
     <section>
@@ -7,7 +9,11 @@ export default function ExploreMenu() {
           <p>
             Choose from a diverse menu featuring a delectable array of dishes
           </p>
-          <div></div>
+          <div>
+            {menuList.map((menuItem, index) => (
+              <ExploreMenuListItem menuItem={menuItem} key={index} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
