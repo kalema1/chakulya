@@ -16,6 +16,7 @@
   position: absolute;
   bottom: 15%;
   left: 6vw;
+  animation: fadeIn 3s;
 }
 
 .heroHeading {
@@ -44,6 +45,19 @@
 .viewMenu:hover {
   background-color: var(--color-background);
   transform: scale(1.5);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /***********************************************/
