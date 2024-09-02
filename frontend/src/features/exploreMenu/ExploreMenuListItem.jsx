@@ -1,8 +1,10 @@
+import styles from "./ExploreMenuListItem.module.css";
+
 export default function ExploreMenuListItem({ menuItem }) {
   return (
-    <div>
-      <img src={menuItem.menuImage} alt="" />
-      <p>{menuItem.menuName}</p>
+    <div className={styles.itemContainer}>
+      <img src={menuItem.menuImage} alt="" className={styles.img} />
+      <p className={styles.para}>{menuItem.menuName}</p>
     </div>
   );
 }

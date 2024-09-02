@@ -1,0 +1,15 @@
+.itemContainer {
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+.img {
+  width: 7.5vw;
+  transition: 0.3s;
+}
+
+.para {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: var(--color-font-3);
+}

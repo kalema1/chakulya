@@ -24,4 +24,5 @@
   text-align: center;
   overflow-x: scroll;
   scrollbar-width: none;
+  border-bottom: 2px solid var(--color-border-2);
 }
