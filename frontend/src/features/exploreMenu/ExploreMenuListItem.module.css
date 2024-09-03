@@ -1,11 +1,14 @@
 .itemContainer {
   cursor: pointer;
   padding-bottom: 2rem;
+  transition: 0.3s;
+}
+.itemContainer:hover {
+  transform: scale(1.1);
 }
 
 .img {
   width: 8vw;
-  transition: 0.3s;
 }
 
 .para {
