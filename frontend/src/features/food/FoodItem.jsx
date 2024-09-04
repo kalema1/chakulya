@@ -1,17 +1,22 @@
+import styles from "./FoodItem.module.css";
+
 export default function FoodItem({ foodItem }) {
   const { name, image, description, price } = foodItem;
   return (
-    <div>
+    <div className={styles.itemConatiner}>
       <div>
-        <img src={image} alt="" />
+        <img className={styles.image} src={image} alt="" />
       </div>
-      <div>
-        <div>
-          <p>{name}</p>
-          <img src="frontend_assets/rating_starts.png" />
+      <div className={styles.itemdetailsContainer}>
+        <div className={styles.itemContainer}>
+          <p className={styles.name}>{name}</p>
+          <img
+            className={styles.ratingImg}
+            src="frontend_assets/rating_starts.png"
+          />
         </div>
-        <p>{description}</p>
-        <p>{`UGX ${price}`}</p>
+        <p className={styles.description}>{description}</p>
+        <p className={styles.price}>{`UGX ${price}`}</p>
       </div>
     </div>
   );

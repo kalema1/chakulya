@@ -9,6 +9,7 @@
   --color-border: tomato;
   --color-border-2: #e2e2e2;
   --color-background: #fff4f2;
+  --color-box-shadow: #000015bf;
 }
 
 * {
@@ -17,6 +18,7 @@
   box-sizing: border-box;
   font-weight: 400;
   line-height: 1.2;
+  color: var(--color-font-2);
 }
 
 html,
