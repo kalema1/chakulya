@@ -6,6 +6,11 @@ export default function FoodItem({ foodItem }) {
     <div className={styles.itemConatiner}>
       <div>
         <img className={styles.image} src={image} alt="" />
+        <img
+          className={styles.addToCart}
+          src="frontend_assets/add_icon_white.png"
+          alt=""
+        />
       </div>
       <div className={styles.itemdetailsContainer}>
         <div className={styles.itemContainer}>
