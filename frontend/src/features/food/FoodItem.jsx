@@ -7,18 +7,18 @@ export default function FoodItem({ foodItem }) {
 
   return (
     <div className={styles.itemConatiner}>
-      <div>
+      <div className={styles.imgContainer}>
         <img className={styles.image} src={image} alt="" />
         {!addToCart ? (
-          <div onClick={addItemsToCart}>
+          <div className={styles.addToCartContainer} onClick={addItemsToCart}>
             <img
-              className={styles.addToCart}
+              className={styles.addToCartImg}
               src="frontend_assets/add_icon_white.png"
               alt=""
             />
           </div>
         ) : (
-          <div>
+          <div className={styles.removeFromCartContainer}>
             <img
               onClick={addItemsToCart}
               src="frontend_assets/add_icon_green.png"
