@@ -2,7 +2,7 @@ import styles from "./FoodItem.module.css";
 import { useFoodItem } from "./useFoodItem";
 
 export default function FoodItem({ foodItem }) {
-  const { addToCart, addItemsToCart } = useFoodItem();
+  const { addToCart, addItemsToCart, removeItemsFromCart } = useFoodItem();
   const { name, image, description, price } = foodItem;
 
   return (
@@ -19,9 +19,17 @@ export default function FoodItem({ foodItem }) {
           </div>
         ) : (
           <div>
-            <img src="frontend_assets/add_icon_green.png" alt="" />
+            <img
+              onClick={addItemsToCart}
+              src="frontend_assets/add_icon_green.png"
+              alt=""
+            />
             <p>{addToCart}</p>
-            <img src="frontend_assets/remove_icon_red.png" alt="" />
+            <img
+              onClick={removeItemsFromCart}
+              src="frontend_assets/remove_icon_red.png"
+              alt=""
+            />
           </div>
         )}
       </div>

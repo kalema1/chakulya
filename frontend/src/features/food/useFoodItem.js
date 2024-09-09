@@ -7,5 +7,9 @@ export function useFoodItem() {
     setAddToCart((add) => add + 1);
   }
 
-  return { addToCart, addItemsToCart };
+  function removeItemsFromCart() {
+    setAddToCart((remove) => remove - 1);
+  }
+
+  return { addToCart, addItemsToCart, removeItemsFromCart };
 }
