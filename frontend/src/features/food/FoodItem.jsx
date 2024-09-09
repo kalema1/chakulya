@@ -20,14 +20,16 @@ export default function FoodItem({ foodItem }) {
         ) : (
           <div className={styles.removeFromCartContainer}>
             <img
-              onClick={addItemsToCart}
-              src="frontend_assets/add_icon_green.png"
-              alt=""
-            />
-            <p>{addToCart}</p>
-            <img
+              className={styles.addToCartImg}
               onClick={removeItemsFromCart}
               src="frontend_assets/remove_icon_red.png"
+              alt=""
+            />
+            <p className={styles.addToCartPara}>{addToCart}</p>
+            <img
+              className={styles.addToCartImg}
+              onClick={addItemsToCart}
+              src="frontend_assets/add_icon_green.png"
               alt=""
             />
           </div>

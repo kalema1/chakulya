@@ -21,14 +21,35 @@
   right: 3%;
   transition: 0.3s;
 }
-.addToCartContainer:hover {
+.addToCartImg:hover {
   transform: scale(1.1);
+}
+
+.removeFromCartContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 500px;
+  background-color: var(--color-font-white);
+  padding: 0.4rem;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  transition: 0.3s;
 }
 
 .addToCartImg {
   width: 100%;
   display: block;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.addToCartPara {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var();
 }
 
 .itemdetailsContainer {
