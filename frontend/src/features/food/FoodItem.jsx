@@ -1,16 +1,29 @@
 import styles from "./FoodItem.module.css";
+import { useFoodItem } from "./useFoodItem";
 
 export default function FoodItem({ foodItem }) {
+  const { addToCart, addItemsToCart } = useFoodItem();
   const { name, image, description, price } = foodItem;
+
   return (
     <div className={styles.itemConatiner}>
       <div>
         <img className={styles.image} src={image} alt="" />
-        <img
-          className={styles.addToCart}
-          src="frontend_assets/add_icon_white.png"
-          alt=""
-        />
+        {!addToCart ? (
+          <div onClick={addItemsToCart}>
+            <img
+              className={styles.addToCart}
+              src="frontend_assets/add_icon_white.png"
+              alt=""
+            />
+          </div>
+        ) : (
+          <div>
+            <img src="frontend_assets/add_icon_green.png" alt="" />
+            <p>{addToCart}</p>
+            <img src="frontend_assets/remove_icon_red.png" alt="" />
+          </div>
+        )}
       </div>
       <div className={styles.itemdetailsContainer}>
         <div className={styles.itemContainer}>
