@@ -6,6 +6,15 @@
 
 .cartBox {
   position: relative;
+  cursor: pointer;
+}
+
+.searchBox {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
 }
 
 .cartItems {
