@@ -7,8 +7,9 @@ export default function NavBarRight() {
       <div>
         <img src="frontend_assets/search_icon.png" alt="" />
       </div>
-      <div>
+      <div className={styles.cartBox}>
         <img src="frontend_assets/basket_icon.png" alt="" />
+        <div className={styles.cartItems}>5</div>
       </div>
       <div className={styles.signInContainer}>
         <SignIn />
