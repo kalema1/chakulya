@@ -1,8 +1,8 @@
+import { useCart } from "../../contexts/CartContext";
 import styles from "./FoodItem.module.css";
-import { useFoodItem } from "./useFoodItem";
 
 export default function FoodItem({ foodItem }) {
-  const { addToCart, addItemsToCart, removeItemsFromCart } = useFoodItem();
+  const { addToCart, addItemsToCart, removeItemsFromCart } = useCart();
   const { name, image, description, price } = foodItem;
 
   return (
