@@ -8,7 +8,14 @@
 }
 
 .img {
+  display: block;
+  padding: 0.4rem;
+  border-radius: 50%;
   width: 8vw;
+}
+
+.img:hover {
+  box-shadow: 0 0 0 1.5px var(--color-border) inset;
 }
 
 .para {
