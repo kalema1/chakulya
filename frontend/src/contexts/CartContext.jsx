@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 const CartContext = createContext();
 
@@ -27,7 +27,7 @@ export default function CartProvider({ children }) {
   );
 }
 
-function useCart() {
+/* function useCart() {
   const context = useContext(CartContext);
 
   if (context === undefined) {
@@ -35,6 +35,6 @@ function useCart() {
   }
 
   return context;
-}
+} */
 
-export { CartProvider, useCart };
+export { CartProvider, CartContext };
