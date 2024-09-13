@@ -3,19 +3,23 @@ import { createContext, useContext, useState } from "react";
 const CartContext = createContext();
 
 export default function CartProvider({ children }) {
-  const [addToCart, setAddToCart] = useState(0);
+  const [addToCart, setAddToCart] = useState({});
 
-  function addItemsToCart() {
-    setAddToCart((add) => add + 1);
+  function handleAddItemsToCart(itemId) {
+    if (!addToCart[itemId]) {
+      setAddToCart((prev) => ({ ...prev, [itemId]: 1 }));
+    }
+
+    setAddToCart((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   }
 
-  function removeItemsFromCart() {
-    setAddToCart((remove) => remove - 1);
+  function handleRemoveItemsFromCart(itemId) {
+    setAddToCart((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   }
 
   return (
     <CartContext.Provider
-      value={{ addItemsToCart, removeItemsFromCart, addToCart }}
+      value={{ handleAddItemsToCart, handleRemoveItemsFromCart, addToCart }}
     >
       {children}
     </CartContext.Provider>

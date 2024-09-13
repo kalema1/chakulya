@@ -1,7 +1,10 @@
+import { useCart } from "../../contexts/CartContext";
 import styles from "./NavBarRight.module.css";
 import SignIn from "./SignIn";
 
 export default function NavBarRight() {
+  const { addToCart } = useCart();
+
   return (
     <div className={styles.navBarRightContainer}>
       <div className={styles.searchBox}>
@@ -17,7 +20,7 @@ export default function NavBarRight() {
           src="frontend_assets/basket_icon.png"
           alt=""
         />
-        <div className={styles.cartItems}>5</div>
+        <div className={styles.cartItems}>{addToCart}</div>
       </div>
       <div className={styles.signInContainer}>
         <SignIn />
