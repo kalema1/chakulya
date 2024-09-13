@@ -27,14 +27,4 @@ export default function CartProvider({ children }) {
   );
 }
 
-/* function useCart() {
-  const context = useContext(CartContext);
-
-  if (context === undefined) {
-    throw new Error("Context used outSide the scope");
-  }
-
-  return context;
-} */
-
 export { CartProvider, CartContext };
