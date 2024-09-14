@@ -20,9 +20,11 @@ export default function NavBarRight() {
           src="frontend_assets/basket_icon.png"
           alt=""
         />
-        <div className={styles.cartItems}>
-          {calculateTheTotalItemQuantity(addToCart)}
-        </div>
+        {!!calculateTheTotalItemQuantity(addToCart) && (
+          <div className={styles.cartItems}>
+            {calculateTheTotalItemQuantity(addToCart)}
+          </div>
+        )}
       </div>
       <div className={styles.signInContainer}>
         <SignIn />
