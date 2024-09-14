@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const CartContext = createContext();
 
@@ -14,13 +14,35 @@ export default function CartProvider({ children }) {
     setAddToCart((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   }
 
+  function calculateTheTotalItemQuantity(obj) {
+    // Get the values of the object
+    const values = Object.values(obj);
+
+    // Calculate the sum of the values
+    const sum = values.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+
+    return sum;
+  }
+
+  useEffect(() => {
+    console.log(addToCart);
+  }, [addToCart]);
+
   function handleRemoveItemsFromCart(itemId) {
     setAddToCart((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   }
 
   return (
     <CartContext.Provider
-      value={{ handleAddItemsToCart, handleRemoveItemsFromCart, addToCart }}
+      value={{
+        handleAddItemsToCart,
+        handleRemoveItemsFromCart,
+        addToCart,
+        calculateTheTotalItemQuantity,
+      }}
     >
       {children}
     </CartContext.Provider>
