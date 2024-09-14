@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const CartContext = createContext();
 
@@ -26,10 +26,6 @@ export default function CartProvider({ children }) {
 
     return sum;
   }
-
-  useEffect(() => {
-    console.log(addToCart);
-  }, [addToCart]);
 
   function handleRemoveItemsFromCart(itemId) {
     setAddToCart((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
