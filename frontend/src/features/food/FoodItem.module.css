@@ -1,6 +1,6 @@
 .itemConatiner {
   border-radius: 1.5rem;
-  box-shadow: 0 0 1rem var(--color-box-shadow);
+  box-shadow: 0 0 3rem var(--color-box-shadow);
 }
 
 .image {
