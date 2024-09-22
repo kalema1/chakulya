@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+.section {
+  margin: 9.6rem 0;
+}
+
 .container {
   padding: 0 2rem;
   max-width: 130rem;

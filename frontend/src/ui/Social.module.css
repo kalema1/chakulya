@@ -1,0 +1,18 @@
+.socialBox {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.socialLink {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.socialLink:hover {
+  transform: scale(1.1);
+}
+
+.socialLinkIcon {
+  color: white;
+}

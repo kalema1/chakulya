@@ -18,7 +18,9 @@ function FilterProvider({ children }) {
   }
 
   return (
-    <FilterContext.Provider value={{ filteredFood, handleFilterCategory }}>
+    <FilterContext.Provider
+      value={{ filteredFood, handleFilterCategory, selectedCategory }}
+    >
       {children}
     </FilterContext.Provider>
   );
