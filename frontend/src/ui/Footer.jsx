@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "../constants/constants";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <div className="container">
         <div>
           <div className={styles.footerBox}>

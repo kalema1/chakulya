@@ -4,7 +4,7 @@ import styles from "./ExploreMenu.module.css";
 
 export default function ExploreMenu() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="menu">
       <div className="container">
         <div className={StyleSheet.ExploreMenuContainer}>
           <h2 className={styles.subHeading}>Explore Our Menu</h2>
