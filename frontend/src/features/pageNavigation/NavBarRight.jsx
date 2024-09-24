@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../../contexts/useCart";
 import styles from "./NavBarRight.module.css";
 import SignIn from "./SignIn";
@@ -14,7 +15,7 @@ export default function NavBarRight() {
           alt=""
         />
       </div>
-      <div className={styles.cartBox}>
+      <Link to="/cart" className={styles.cartBox}>
         <img
           className={styles.image}
           src="frontend_assets/basket_icon.png"
@@ -25,7 +26,7 @@ export default function NavBarRight() {
             {calculateTheTotalItemQuantity(addToCart)}
           </div>
         )}
-      </div>
+      </Link>
       <div className={styles.signInContainer}>
         <SignIn />
       </div>

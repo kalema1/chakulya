@@ -34,7 +34,7 @@ export default function PageNav() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={styles.navListItem}>
+                <NavLink to="/contact-us" className={styles.navListItem}>
                   Contact us
                 </NavLink>
               </li>
